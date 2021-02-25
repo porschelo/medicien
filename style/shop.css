@@ -1,0 +1,126 @@
+@import url('../style/reset.css;');
+
+body{
+    width: 100%;
+	line-height: 1.6;
+	font-size: 16px;
+    /* background-color:  #E8DCC8; */
+
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 34px;
+}
+h2{
+    font-size: 18px;
+}
+/* ------section1 block----- */
+
+/* ------section2 block----- */
+.section2{
+  background-color: #8D9A7B;
+  width: 100%;
+  height: 1200px;
+  padding-bottom: 30px;
+  line-height: 1.4;
+  display: flex;
+  padding-bottom: 80px;
+  /* justify-content: space-between; */
+}
+.section2 .woodboard{
+    height: 550px;
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin: 0 45px 0 45px;
+}
+.section2 .woodboard a{
+    text-decoration: none;
+    color: #000;
+}
+.section2 .woodboard a:hover{
+    color: #995316;
+}
+.section2 .wood{
+    /* display: flex; */
+    width: 45px;
+    height: 150px;
+    background-image: url(../img/02shop/wood01.png);
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+.section2 .wood p{
+    text-align: center;
+    padding-top: 35px;
+}
+.productboard{
+    width: 800px;
+    background-color: #F6F0E3;
+    margin: 30px 0;
+    padding: 60px 50px 30px;
+    position: relative;
+}
+.productboard .search{
+    outline: 0;
+    margin: 0 20px 30px 5px;
+    
+}
+.productboard .top{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.productboard .top img{
+    width: 20px;
+    height: 21px;
+}
+
+.productboard .select{
+    width: 130px;
+    height: 22px;
+    letter-spacing: 1px;
+    margin-right: 75px;
+}
+.productboard .out{
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    justify-content: space-around;
+
+}
+.productboard .out a{
+    text-decoration: none;
+    color: #000;
+}
+.productboard .out .product{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.productboard .out .product:hover{
+    background-color: #B1B9A3;
+}
+.out .product img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.out .product h2{
+   margin-bottom: 10px;
+}
+.productboard .number{
+    text-align: center;
+}
+.productboard .number a{
+    text-decoration: none;
+    margin: 0 10px;
+    color:#F6F0E3;
+}
+.productboard .number a:hover{
+    font-weight: bold;
+    color: #4B6941;
+}

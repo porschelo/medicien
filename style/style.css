@@ -1,0 +1,265 @@
+@import url('../style/reset.css');
+
+body{
+    width: 100%;
+	line-height: 1.6;
+	font-size: 16px;
+    /* background-color:  #E8DCC8; */
+
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 34px;
+}
+h2{
+    font-size: 18px;
+}
+
+/* ...... section1 ....... */
+.section1{
+    background-color:  #E8DCC8; 
+    position: relative;
+   
+}
+.section1 > img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.section1 .arrow {
+    display: block;
+    width: 15px;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    /* z-index: 1; */
+}
+/* ...... section2 ....... */
+.section2{
+    background-color: #E2CFA9;
+}
+.section2 .main-pic{
+    width: 100%;
+    clear: both;
+}
+.bottom{
+    overflow: hidden;
+    padding: 0 10px 70px 15px;
+}
+.bottom-left{
+    float: left;
+}
+.bottom-right {
+    float: right;
+    margin-right: 30px;  
+}
+.bottom-right li{
+    display: inline-block;
+    width: 20px;
+    margin-left: 5px; 
+    margin-top: 12px;
+}
+.clear{
+    clear: both;
+}
+/* ...... section3 ....... */
+.section3{
+    background-color: #B1B9A3;
+    text-align: center;
+    padding-top:70px ;  
+    padding-bottom: 5px;
+    overflow: hidden;
+  
+}
+.section3 h1{
+    letter-spacing: 5px;
+}
+.section3 h2{
+    padding: 10px 0 70px;
+    letter-spacing: 2px;
+}
+.section3 .product-list{
+    width: 120%;
+    height: 400px;
+    display: flex;
+    transform: translate(-8%);
+    margin-bottom: 70px;  
+}
+
+.section3 .product-list li{
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.section3 .product-list span{
+    font-size: 20px;
+}
+.product-list img:hover{
+    outline: 2.5px solid  #6B7F5A;
+    /* animation: img .8s ease forwards; */
+    /* animation: img2 .8s  ease forwards; */
+}
+/* @keyframes img{
+    0%{
+        transform: scale(1) translateY(0);
+    }
+    100%{
+        transform: scale(1.08) translateY(-30px);
+    }
+} */
+/* @keyframes img2{
+    0%{
+        transform: scale(1);
+       
+    }
+    100%{
+        transform: scale(1.06);
+      
+    }
+} */
+
+.product-list img{
+    width: 220px;
+}
+.section3 .product-list a{
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto 100px;
+    
+}
+.section3 .product-list a:hover{
+    /* flex-grow: 2; */
+    animation: img .6s ease forwards;
+}
+@keyframes img{
+    0%{
+        transform: scale(1) translateY(0);
+    }
+    100%{
+        transform: scale(1.05)translateY(-20px);
+    }
+}
+
+.section3 .btn{
+    text-decoration: none;
+    display: block;
+    background-color: #ECDFC6;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #6B7F5A;
+    text-align: center;
+    margin: 0 auto 100px;
+    font-size: 20px;
+}
+.section3 .btn:hover{
+    background-color: #E2CFA9;
+}
+/* ...... section4 ....... */
+.section4{
+    position: relative;
+}
+.section4 .cover{
+    position: absolute;
+    width: 100%;
+    height: 313.51px;
+    background-color: rgba(93,93,93,.3);
+    top: 0;
+    
+}
+.section4 img{
+    width: 100%;
+    display: block;
+}
+.section4 span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(233, 233, 233);
+    text-align: center;
+}
+.section4 span h1{
+   margin-bottom: 10px;
+}
+/* ...... section5 ....... */
+.section5{
+    height: 2400px;
+    background-image:linear-gradient(180deg,rgba(216, 219 ,208) 0%, rgba(107, 127 ,90) 100%);
+}
+/* <top> */
+.top{
+    position: relative;
+}
+.top span{
+    position: absolute;
+    top: 386px;
+    left: 4%;
+    font-size: 48px;
+}
+.top h2{
+    position: absolute;
+    width: 380px;
+    text-align: left;
+    top: 420px;
+    left: 10%;
+}
+.top img{
+    position: absolute;
+    width: 630px;
+    right: 2%;
+    top: 200px;
+}
+/* <mid> */
+.mid{
+    position: relative;
+}
+.mid span{
+    position: absolute;
+    font-size: 48px;
+    top: 825px;
+    right: 40%;
+}
+.mid h2{
+    position: absolute;
+    width: 375px;
+    text-align: left;
+    top: 858px;
+    right: 6%;
+
+}
+.mid img{
+    position: absolute;
+    width:450px;
+    top: 1000px;
+    left: 15%;
+}
+
+/* <btm> */
+
+.btm { 
+    position: relative;
+}
+.btm span{
+    position: absolute;
+    font-size: 48px;
+    top: 1807px;
+    left: 12%;
+}
+.btm h2{
+    position: absolute;
+    top: 1840px;
+    width: 370px;
+    left: 19%;
+
+ }
+.btm img{
+    position: absolute;
+    width:450px;
+    top: 1600px;
+    right: 5%;
+}

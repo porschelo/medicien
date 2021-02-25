@@ -1,0 +1,253 @@
+@import url('../style/reset.css;');
+
+body{
+    width: 100%;
+	line-height: 1.6;
+	font-size: 16px;
+    /* background-color:  #E8DCC8; */
+
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 34px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 18px;
+}
+/* ------section1 block----- */
+
+/* ------section2 block----- */
+.section2{
+    background-color: #B1B9A3;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+.section2 .woodboard{
+    margin-left: 25px;
+    margin-right: 0;
+}
+.section2 .woodboard a{
+    text-decoration: none;
+    color: #000;
+
+}
+.section2 .woodboard a:hover{
+    color: #995316;
+}
+.section2 a .wood{
+    width: 45px;
+    height: 150px;
+    background-image: url(/img/02shop/wood01.png);
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+
+}
+.wood p{
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* ---- s-center ---- */
+.s-center{
+text-align: center;
+}
+.s-center img{
+    width: 500px;
+    margin-bottom: 20px;
+}
+.s-center .center-bottom{
+
+}
+.s-center .center-bottom img{
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+}
+.s-center .center-bottom img:hover{
+    box-sizing: border-box;
+    border: 1px solid #6B7F5A;
+}
+
+/* ---- s-right ---- */
+
+.s-right{
+    width: 450px;
+}
+.s-right .top{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 420px;
+}
+.s-right .top h1{
+    margin: 20px 0 30px;
+
+}
+.s-right .top a{
+   
+}
+.s-right .top img{
+    width: 25px;
+}
+.s-right .top img:hover{
+   
+    
+}
+.s-right h1{
+    margin-bottom: 10px;   
+}
+.s-right h4{
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  
+}
+.s-right .line01{
+    border-top: .5px solid rgb(143, 143, 143);
+    width: 430px;
+    margin: 25px 0;
+}
+.s-right h3{
+    padding: 10px 0;
+}
+.s-right select{
+    width: 430px;
+    height: 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-left: 165px;
+    
+}
+.s-right .inputbox{
+    width: 430px;
+    height: 30px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding-left: 215px;
+}
+.s-right .button{
+    width: 430px;
+    
+}
+
+.s-right .button a{
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    line-height: 45px;
+    flex: 20px;
+    margin: 30px 0;
+}
+.s-right .button a:hover{
+    outline: 2px solid  #6B7F5A;
+}
+.s-right .button a:nth-child(1){
+    width: 140px;
+    height: 45px;
+    background-color: #fff;
+    margin-right: 40px;
+ 
+}
+.s-right .button a:nth-child(2){
+    width: 243px;
+    height: 45px;
+    background-color: #E2CFA9;
+
+}
+
+.s-bottom{
+    background-color: #B1B9A3;
+    margin: 0 auto;
+    width: 100%;
+
+}
+.s-bottom .buttom{
+   width: 700px;
+   margin: 0 auto;
+   text-align: center;
+   
+}
+.s-bottom .buttom a{
+    display: inline;
+    text-decoration: none;
+    color: #000;
+    /* background-color: rgb(146, 78, 78); */
+    letter-spacing: 2px;
+    margin: 0 80px;
+}
+.s-bottom .line02{
+    border-top: 1px solid #000;
+    width: 700px;
+}
+
+.s-bottom .line03{
+    border-top: 5px solid #000;
+    width: 200px;
+    margin-left: 14%;
+    background-color :#F6F0E3;
+}
+/*------------- section 3 -----------*/
+.section3{
+    background-color: #F6F0E3;
+}
+.section3 .pics{
+    padding: 50px 0;
+    
+}
+.section3 .pics img{
+    width: 650px;
+    display: block;
+    margin: 0 auto ;
+}
+.section3 .pics img:first-child{
+    padding-bottom: 50px;
+}
+.section3 .text{
+    display: flex;
+    width: 750px;
+    margin: 0 auto;
+    justify-content:space-between;
+    padding-bottom: 50px;
+}
+.section3 .t-left{
+    width: 340px;
+}
+.section3 .t-right{
+    width: 340px;
+}
+
+/*------------- section 4 -----------*/
+.section4{
+    width: 100%;
+    background-color: #ACB6A1;
+}
+.section4  h1{
+    text-align: center;
+    padding-top: 60px;
+}
+.maylike{
+   padding: 50px 0;
+}
+.section4 .maylike ul{
+    display: flex;
+    justify-content: space-around;  
+}
+.section4 .maylike li{
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+.maylike li img{
+    width: 200px;
+}
+.maylike li img:hover{
+    outline: 2.5px solid  #6B7F5A;
+}

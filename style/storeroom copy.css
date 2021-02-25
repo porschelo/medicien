@@ -1,0 +1,311 @@
+@import url('/style/reset.css');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+	line-height: 1.6;
+	font-size: 16px;
+    /* background-color:  #E8DCC8; */
+
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 34px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 18px;
+}
+/* ------section1 block----- */
+
+/* ------section2 block----- */
+.section2{
+    background-color: #8D9A7B;
+    display: flex;
+    padding: 100px 0;
+    margin: 0 auto;
+    
+}
+.section2 .s-left{
+    margin: 30px;
+    /* border:1px solid blue; */
+    width:67px;
+    flex-shrink:0;
+}
+
+.section2 .s-left a{
+    text-align: center;
+    text-decoration: none;
+    color:  #000;
+    line-height: 1.35;
+}
+.section2 .s-left a:hover{
+    color: #995316;
+}
+.section2 .s-left .wood{
+    width: 45px;
+    height: 150px;
+    background-image: url(../img/02shop/wood01.png);
+    background-repeat: no-repeat;
+    margin: 20px 10px;
+}
+.section2 .s-left .wood p{
+    padding-top: 30px;
+}
+
+/* ------s-right----- */
+
+.section2 .s-right{
+    background-color: #E2CFA9;
+    border: 2px solid #8D9A7B;
+    /* border:1px solid red; */
+}
+.section2 .s-right .box{
+    display: flex;
+    /* border:1px solid green; */
+    /* width: 982px; */
+}
+.section2 .s-right .box .box1{
+    height: 550px;
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    flex-shrink:0;
+}
+ .s-right .box .box1 a{
+
+    text-align: center;
+    text-decoration: none;
+    color:  #000;
+    line-height: 2;
+ 
+ }
+ .s-right .box .box1 a:hover{
+    color: #995316;
+}
+.s-right .box .box1 .active {
+    color: #995316; 
+}
+
+.s-right .box .box1 .wood{
+    width: 45px;
+    height: 150px;
+    background-image: url(../img/02shop/wood01.png);
+    background-repeat: no-repeat;
+    margin:  10px;
+}
+.s-right .box1 .wood p{
+    padding-top: 48px;
+
+}
+/* ......................box2..................... */
+.s-right .box2{
+    text-align: center;
+    border: 2px solid #8D9A7B;
+    border-top: 0;
+    border-bottom: 0;
+    flex-shrink:0;
+}
+.s-right .box2 .b2-1{
+    letter-spacing: 10px;
+    border-bottom: 2px solid #8D9A7B;
+    
+}
+.s-right .box2 .b2-2{
+    background-image: url(../img/03storeroom/pic01.png);
+    width: 320px;
+    height: 458px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.s-right .box2 .b2-3{
+    border-top: 2px solid #8D9A7B;
+}
+/* ......................box3..................... */
+
+.s-right .box3{
+    writing-mode: vertical-lr;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    background-color: #E2CFA9;
+    text-align: center;
+    box-sizing: border-box;
+    flex-shrink:0;
+    /* border:1px solid red; */
+    flex-shrink:0;
+    /* display: none; */
+    flex-direction: column;
+    width: 400px;
+    flex-wrap: wrap;
+    /* flex-shrink: 0; */
+}
+
+/* .s-right .box3 p{
+    writing-mode: vertical-lr;
+}
+.s-right .box3 h1{
+    writing-mode: vertical-lr;
+} */
+
+/* ......................box3-1..................... */
+.s-right .box3 .b3-1{
+    /* display: flex; */
+    height: 51%;
+    border-bottom: 2px solid #8D9A7B;
+    box-sizing: border-box;
+}
+.s-right .box3 .b3-1 .list{
+    width: 75px;
+    position: relative;
+}
+.s-right .box3 .b3-1 li.list1-1{
+    width: 175px;
+    border-right: 2px solid #8D9A7B;
+    position: relative;
+}
+.s-right .box3 .b3-1 li.list1-1 p{
+    position: absolute;
+    height: 170px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.s-right .box3 .b3-1 li.list1-2{
+    border-right: 2px solid #8D9A7B;
+    /* position: relative; */
+}
+.s-right .box3 .b3-1 li.list1-2 h1{
+    /* position: absolute;
+    height: 170px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%); */
+    line-height: 75px;
+}
+
+.s-right .box3 .b3-1 li.list1-3{
+    width: 75px;
+    border-right: 2px solid #8D9A7B;
+    position: relative;
+}
+.s-right .box3 .b3-1 li.list1-3 p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+}
+.s-right .box3 .b3-1 li.list1-4 h1{
+    line-height: 75px;
+}
+
+.s-right .box3 .b3-2{
+    border-bottom: 2px solid #8D9A7B;
+}
+
+.box3  .b3-2 .list2-1, .list2-2, .list2-4, .list3-4{
+    line-height: 100px;
+}
+.box3  .b3-2 .list2-3, .list2-5, .list3-3, .list3-5{
+    line-height: 50px;
+}
+.s-right .box3 .b3-3{
+    border-bottom: 2px solid #8D9A7B;
+}
+
+/* ......................box3-2..................... */
+.s-right .box3 .b3-2{
+    height: 20%;
+    border-bottom: 2px solid #8D9A7B;
+}
+
+.s-right .box3 li.list2-1{
+    width: 100px;
+    border-right: 2px solid #8D9A7B;
+}
+.s-right .box3 li.list2-2{
+    width: 100px;
+    border-right: 2px solid #8D9A7B;
+}
+
+.s-right .box3 li.list2-3{
+    width: 50px;
+    border-right: 2px solid #8D9A7B;
+}
+.s-right .box3 li.list2-4{
+    width: 100px;
+    border-right: 2px solid #8D9A7B;
+}
+.s-right .box3 li.list2-5{
+    width: 50px;
+    
+}
+/* ......................box3-3..................... */
+.s-right .box3 .b3-3{
+    border-bottom: 2px solid #8D9A7B;
+    height: 19.5%;
+    /* text-align: center; */
+}
+
+.s-right .box3 li.list3-1{
+    width: 100px;
+    border-right: 2px solid #8D9A7B;
+    position: relative;
+}
+.s-right .box3 li.list3-1 p{
+    height: 80px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+}
+.s-right .box3 li.list3-2{
+    width: 100px;
+    border-right: 2px solid #8D9A7B;
+    position: relative;
+}
+.s-right .box3 li.list3-2 p{
+    height: 80px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+}
+
+.s-right .box3 li.list3-3{
+    width: 50px;
+    border-right: 2px solid #8D9A7B;
+}
+.s-right .box3 li.list3-4{
+    width: 100px;
+    border-right: 2px solid #8D9A7B;
+}
+.s-right .box3 li.list3-5{
+    width: 50px;
+}
+/* ......................box3-4..................... */
+.s-right .box3 .b3-4{
+    writing-mode:horizontal-tb;
+    height: 10%;
+    
+}
+.s-right .box3 .b3-4 p{
+    text-align: center;
+    line-height: 50px;
+    width: 400px;
+}
+
+
+/* .s-right .box4{
+    border:1px solid pink;
+} */
