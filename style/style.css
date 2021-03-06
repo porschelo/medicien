@@ -2,13 +2,14 @@
 
 body{
     width: 100%;
+    min-width: 1160px;
 	line-height: 1.6;
 	font-size: 16px;
     /* background-color:  #E8DCC8; */
 
 }
 .wrapper{
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 h1{
@@ -44,6 +45,7 @@ h2{
 .section2 .main-pic{
     width: 100%;
     clear: both;
+    display: block;
 }
 .bottom{
     overflow: hidden;
@@ -86,7 +88,7 @@ h2{
     height: 400px;
     display: flex;
     transform: translate(-8%);
-    margin-bottom: 70px;  
+    margin-bottom: 20px;  
 }
 
 .section3 .product-list li{
@@ -161,29 +163,37 @@ h2{
 }
 /* ...... section4 ....... */
 .section4{
-    position: relative;
-}
-.section4 .cover{
-    position: absolute;
+    /* position: relative; */
+    background-image: url(../img/00index/pic02.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
-    height: 313.51px;
+    height: 100%;
+    padding: 100px 0;
+}
+/* .section4 .cover{
+    position: absoluter;
+    width: 100%;
+    height: 100%;
     background-color: rgba(93,93,93,.3);
     top: 0;
     
-}
+} */
 .section4 img{
     width: 100%;
     display: block;
 }
-.section4 span{
-    position: absolute;
-    top: 50%;
+.section4 .text{
+    /* position: absolute; */
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     color: rgb(233, 233, 233);
     text-align: center;
 }
-.section4 span h1{
+.section4 .text h1{
    margin-bottom: 10px;
 }
 /* ...... section5 ....... */
@@ -218,18 +228,28 @@ h2{
 .mid{
     position: relative;
 }
-.mid span{
+.mid .mid-right{
     position: absolute;
-    font-size: 48px;
     top: 825px;
-    right: 40%;
+    right: 3%;
+}
+.mid span{
+    /* position: absolute; */
+    display: inline-block;
+    font-size: 48px;
+    vertical-align: top;
+    /* top: 825px;
+    right: 42%; */
 }
 .mid h2{
-    position: absolute;
+    /* position: absolute; */
+    display: inline-block;
     width: 375px;
     text-align: left;
-    top: 858px;
-    right: 6%;
+    padding-top: 3%;
+    margin-left: 2%;
+    /* top: 858px;
+    right: 10%; */
 
 }
 .mid img{

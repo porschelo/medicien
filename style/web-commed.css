@@ -11,12 +11,13 @@
     width: 80px;
     
 }
-.nav ul{
+.nav ul.out{
    float: right;
    display: flex;
    box-sizing: border-box;
 }
-.nav ul li{
+.nav ul.out li{
+    /* display: inline-block; */
     margin-left: 45px;
     margin-top: 40px;
     position: relative;   
@@ -71,6 +72,42 @@
     margin-left: 45px;
     margin-top: 40px;
     width: 22px;
+}
+
+/* 下拉選單 */
+.nav .select{
+    /* position: relative; */
+}
+
+.nav li.select{
+    position: relative;
+}
+.nav li.select:hover ul.shop-list{
+    display: block;
+}
+
+ul.shop-list{
+    display:none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.nav .select ul.shop-list li{
+    list-style: none;
+
+}
+
+.nav .select ul.shop-list a{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+.nav .select ul.shop-list a:hover{
+    color:#8D9A7B;
 }
 
 
