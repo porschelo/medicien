@@ -8,7 +8,8 @@ body{
 
 }
 .wrapper{
-    width: 1200px;
+    width: 100%;
+    min-width: 1080px;
     margin: 0 auto;
 }
 h1{
@@ -21,18 +22,23 @@ h2{
 
 /* ------section2 block----- */
 .section2{
+  margin:0 auto ;
   background-color: #8D9A7B;
   width: 100%;
-  height: 1200px;
-  padding-bottom: 30px;
+  min-width: 1080px;
+  /* height: 1200px; */
+  padding-bottom: 10px;
   line-height: 1.4;
   display: flex;
-  padding-bottom: 80px;
+
+  
   /* justify-content: space-between; */
+  /* border: 1px solid red; */
 }
 .section2 .woodboard{
     height: 550px;
     width: 210px;
+    min-width: 145px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -59,11 +65,12 @@ h2{
     padding-top: 35px;
 }
 .productboard{
-    width: 800px;
+    /* width: 800px; */
     background-color: #F6F0E3;
-    margin: 30px 0;
-    padding: 60px 50px 30px;
-    position: relative;
+    margin: 30px 0 10px;
+    padding: 60px 40px 0px;
+    /* position: relative; */
+    /* border: 1px solid red; */
 }
 .productboard .search{
     outline: 0;
@@ -91,7 +98,7 @@ h2{
     flex-wrap: wrap;
     width: 750px;
     justify-content: space-around;
-
+    /* border: 1px solid blue; */
 }
 .productboard .out a{
     text-decoration: none;
@@ -112,15 +119,29 @@ h2{
 .out .product h2{
    margin-bottom: 10px;
 }
-.productboard .number{
+.section2 .number{
+    display: block;
     text-align: center;
+    margin-top: 20px;
 }
-.productboard .number a{
+
+.section3{
+    background-color: #8D9A7B;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.section3 .number a{
     text-decoration: none;
     margin: 0 10px;
     color:#F6F0E3;
+   
 }
-.productboard .number a:hover{
+.section3 .number a:hover{
     font-weight: bold;
     color: #4B6941;
+}
+/* footer-block */
+.footer{
+    width: 100%;
+    min-width: 1080px;
 }

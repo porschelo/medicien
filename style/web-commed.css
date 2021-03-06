@@ -11,12 +11,12 @@
     width: 80px;
     
 }
-.nav ul.out{
+.nav ul.menu{
    float: right;
    display: flex;
    box-sizing: border-box;
 }
-.nav ul.out li{
+.nav ul.menu .btn{
     /* display: inline-block; */
     margin-left: 45px;
     margin-top: 40px;
@@ -75,9 +75,6 @@
 }
 
 /* 下拉選單 */
-.nav .select{
-    /* position: relative; */
-}
 
 .nav li.select{
     position: relative;
@@ -91,20 +88,20 @@ ul.shop-list{
     position: absolute;
     margin: 0;
     padding: 0;
-    top: 0;
+    top: 25;
     left: 0;
 }
 
 .nav .select ul.shop-list li{
     list-style: none;
-
+    width: 100px;
 }
 
 .nav .select ul.shop-list a{
     display: inline-block;
     text-decoration: none;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 .nav .select ul.shop-list a:hover{
     color:#8D9A7B;

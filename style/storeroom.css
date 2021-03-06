@@ -35,7 +35,6 @@ h3{
 }
 .section2 .s-left{
     margin: 30px;
-    /* border:1px solid blue; */
     width:67px;
     flex-shrink:0;
 }
@@ -63,6 +62,7 @@ h3{
 /* ------s-right----- */
 
 .section2 .s-right{
+    margin: 0 auto;
     background-color: #E2CFA9;
     border: 2px solid #8D9A7B;
     /* border:1px solid red; */
