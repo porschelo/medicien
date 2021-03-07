@@ -293,4 +293,9 @@ text-align: center;
 
 .section3  .tab-content.current{
     display: inherit;
+    text-align: center;
+    padding: 60px 0;
+  }
+  .tab-content.current p{
+      padding-bottom: 20px;
   }
