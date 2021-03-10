@@ -1,6 +1,6 @@
 @import url('../style/reset.css');
 
-*{outline: 1px solid red;}
+/* *{outline: 1px solid red;} */
 
 /* ...... 共用 nav bar ....... */
 .nav{
@@ -81,7 +81,7 @@
     .nav .logo1{
         max-width: 60px;
         width: 100%;
-        
+     
     }
 }
 

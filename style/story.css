@@ -1,5 +1,8 @@
 @import url('../style/reset.css');
 
+*{outline: 1px solid red;}
+
+
 body{
     width: 100%;
 	line-height: 1.6;
@@ -9,7 +12,7 @@ body{
 }
 .wrapper{
     width: 100%;
-    min-width: 1160px;
+    /* min-width: 1160px; */
     margin: 0 auto;
 }
 h1{
@@ -20,9 +23,13 @@ h2{
 }
 
 /* ------section1 block----- */
+.section1{
+    background-color:   #E2CFA9; 
+}
 .container{
     width: 100%;
     height: 100%;
+    clear: both;
 }
 .container img{
     display: block;
@@ -56,78 +63,199 @@ h2{
 }
 /* ------section3 block----- */
 .section3{
-    height: 2450px;
     background-image:linear-gradient(180deg,rgba(216, 219 ,208) 0%, rgba(107, 127 ,90) 100%);
 }
+
 /* <top> */
+
 .top{
-    position: relative;
+   display: flex;
+   justify-content: center;
+   padding-top: 100px;
+}
+.top .top-left{
+    padding-top: 200px;
+    min-width: 265px;
+    box-sizing: border-box;
+}
+.top .top-right{
+    box-sizing: border-box;
 }
 .top span{
-    position: absolute;
-    top: 456px;
-    right: 37%;
     font-size: 48px;
 }
 .top h2{
-    position: absolute;
-    width: 380px;
     text-align: left;
-    top: 490px;
-    right: 3%;
 }
 .top img{
-    position: absolute;
-    width: 600px;
-    left: 5%;
-    top: 200px;
+    width: 100%;
+    display: block;
+    min-width: 265px;
 }
+.t-margin{
+    margin: 10px;
+}
+@media screen and (max-width:575px ){
+    .top{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .top .top-left{
+        width: 100%;
+        min-width: 265px;
+        padding: 10px;
+        /* box-sizing: border-box; */
+    }
+    .t-margin{
+        margin: 0;
+    }
+}
+@media  (min-width:576px) and (max-width: 1160px){
+        .top .top-left{
+            /* width: 50%; */
+            max-width: 350px;
+            padding-top: 25%;
+        }   
+        .top-right img{
+            display: block;
+            width: 100%;
+            /* max-width: 400px; */
+        }
+}
+@media(min-width:1161px){
+    .top .top-left{
+        max-width: 500px;
+        padding-top: 25%;
+    }     
+}
+
+
 /* <mid> */
 .mid{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.mid .mid-left{
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+.mid .mid-right{
+    padding-top: 100px;
+    min-width: 265px;
+    box-sizing: border-box;
+    order: 1;
 }
 .mid span{
-    position: absolute;
     font-size: 48px;
-    top: 1071px;
-    left: 6%;
 }
 .mid h2{
-    position: absolute;
-    width: 380px;
     text-align: left;
-    top: 1105px;
-    left: 14%;
-
 }
 .mid img{
-    position: absolute;
-    width:550px;
-    top: 925px;
-    left: 51%;
+    display: block;
+    width: 100%;
+    min-width: 265px;
+}
+@media screen and (max-width:575px ){
+    .mid{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .mid .mid-right{
+        width: 100%;
+        min-width: 265px;
+        padding: 10px;
+        /* box-sizing: border-box; */
+    }
+    .t-margin{
+        margin: 0;
+    }
+    .mid .mid-left{
+        padding-top: 0;
+        order: 1;
+    }
+}
+@media  (min-width:576px) and (max-width: 1160px){
+        .mid .mid-right{
+            max-width: 350px;
+            padding-top: 25%;
+        }   
+        .mid-left img{
+            display: block;
+            width: 100%;
+            /* max-width: 400px; */
+        }
+}
+@media(min-width:1161px){
+    .mid .mid-right{
+        max-width: 500px;
+        padding-top: 25%;
+    }     
 }
 
 /* <btm> */
 
 .btm { 
-    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btm .btm-left{
+    padding-top: 100px;
+    min-width: 265px;
+    box-sizing: border-box;
+}
+.btm .btm-right{
+    padding-top: 100px;
+    box-sizing: border-box;
 }
 .btm span{
-    position: absolute;
     font-size: 48px;
-    top: 1577px;
-    right: 46%;
 }
 .btm h2{
-    position: absolute;
-    top: 1607px;
-    width: 370px;
-    right: 13%;
-
+    text-align: left;
  }
 .btm img{
-    position: absolute;
-    width: 450px;
-    top: 1738px;
-    left: 9%;
+    display: block;
+    width: 100%;
+    min-width: 265px;
+}
+
+@media screen and (max-width:575px ){
+    .btm{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .btm .btm-left{
+        width: 100%;
+        min-width: 265px;
+        padding: 10px;
+        /* box-sizing: border-box; */
+    }
+    .btm .btm-right{
+        padding-top: 0;
+    }
+    .t-margin{
+        margin: 0;
+    }
+}
+@media  (min-width:576px) and (max-width: 1160px){
+        .btm .btm-left{
+            /* width: 50%; */
+            max-width: 350px;
+            padding-top: 25%;
+        }   
+        .btm-right img{
+            display: block;
+            width: 100%;
+            /* max-width: 400px; */
+        }
+}
+@media(min-width:1161px){
+    .btm .btm-left{
+        max-width: 500px;
+        padding-top: 25%;
+    }     
 }

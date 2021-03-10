@@ -1,6 +1,7 @@
 @import url('../style/reset.css');
 
-/* *{outline: 1px solid red;} */
+/* * {
+    outline: 1px solid red;} */
 
 body{
     width: 100%;
@@ -31,6 +32,7 @@ h2{
     display: block;
     width: 100%;
     margin: 0 auto;
+   
 }
 .section1 .arrow {
     display: block;
@@ -43,6 +45,7 @@ h2{
 /* ...... section2 ....... */
 .section2{
     background-color: #E2CFA9;
+    
 }
 .section2 .main-pic{
     width: 100%;
@@ -93,6 +96,7 @@ h2{
     margin-bottom: 20px;  
     /* overflow: hidden; */
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .section3 .product-list li{
@@ -142,6 +146,7 @@ h2{
     text-align: center;
     margin: 0 auto 100px;
     font-size: 20px;
+   
 }
 .section3 .btn:hover{
     background-color: #E2CFA9;
@@ -191,7 +196,6 @@ h2{
     
 }
 .top .top-right{
-    padding-bottom: 10%;
     box-sizing: border-box;
 }
 .t-margin{
@@ -209,7 +213,7 @@ h2{
     min-width: 265px;
 }
 
-@media screen and (max-width:575px ){
+@media (max-width:575px ){
     .top{
         flex-direction: column;
         padding-top: 0;
@@ -223,13 +227,10 @@ h2{
     .t-margin{
         margin: 0;
     }
-    .top .top-right{
-        padding-bottom: 0;
-
-    }
+  
 }
 
-@media screen and (min-width:576px) and (max-width: 1160px){
+@media (min-width:576px) and (max-width: 1160px){
     .top .top-left{
         /* width: 50%; */
         max-width: 400px;
@@ -242,7 +243,7 @@ h2{
     }
 }
 
-@media screen and (min-width:1161px ){
+@media (min-width:1161px ){
     .top .top-left{
         width: 50%;
         max-width: 550px;
@@ -277,7 +278,7 @@ h2{
     width: 100%;
     min-width: 265px;
 }
-@media screen and (max-width:575px ){
+@media  (max-width:575px ){
     .mid{
         flex-direction: column;
         padding-top: 0;
@@ -295,7 +296,7 @@ h2{
       
      }
 }
-@media screen and (min-width:576px) and (max-width: 1160px){
+@media  (min-width:576px) and (max-width: 1160px){
     .mid .mid-right{
         /* width: 50%; */
         max-width: 400px;
@@ -307,7 +308,7 @@ h2{
         /* max-width: 400px; */
     }
 }
-@media screen and (min-width:1161px ){
+@media  (min-width:1161px ){
     .mid .mid-right{
         width: 50%;
         max-width: 550px;     
@@ -329,6 +330,8 @@ h2{
     width: 100%;
     min-width: 265px;
     box-sizing: border-box;
+    padding-top: 25%;
+
 }
 .btm span{
     font-size: 48px;
@@ -342,7 +345,7 @@ h2{
     width: 100%;
     min-width: 265px;
 }
-@media screen and (max-width:575px ){
+@media  (max-width:575px ){
     .btm{
         flex-direction: column;
         padding-top: 0;
@@ -357,7 +360,7 @@ h2{
     }
 
 }    
-@media screen and (min-width:576px) and (max-width: 1160px){
+@media  (min-width:576px) and (max-width: 1160px){
     .btm .btm-left{
         /* width: 50%; */
         max-width: 400px;
@@ -369,7 +372,7 @@ h2{
         /* max-width: 400px; */
     }
 }
-@media screen and (min-width:1161px ){
+@media (min-width:1161px ){
     .btm .btm-left{
         width: 50%;
         max-width: 550px;     
@@ -395,10 +398,14 @@ section {
     background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
   }
   
-  
-  .demo a {
+  .scroll_btn{
+      position: absolute;
+    left: 50%;
+    top: 45%;
+    margin-left: -23px;
+  }
+  .scroll a {
     position: absolute;
-    bottom: 440px;
     left: 50%;
     z-index: 2;
     display: inline-block;
@@ -410,7 +417,7 @@ section {
     text-decoration: none;
     transition: opacity .3s;
   }
-  .demo a:hover {
+ .scroll a:hover {
     opacity: .5;
   }
   #section03{

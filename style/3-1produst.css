@@ -291,7 +291,7 @@ text-align: center;
     padding: 15px;
   }
 
-.section3  .tab-content .current{
+.section3  .tab-content.current{
     display: inherit;
     text-align: center;
     padding: 65px 0;
@@ -299,8 +299,4 @@ text-align: center;
   .tab-content.current p{
       padding-bottom: 20px;
   }
-  .section3  .tab-content {
-    display: inherit;
-    text-align: center;
-    padding: 65px 0;
-  }
+  
