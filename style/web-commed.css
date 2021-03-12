@@ -75,20 +75,20 @@
     margin-left: 45px;
     margin-top: 40px;
     width: 22px;
+    float: right;
 }
 
 @media screen and (max-width:575px ){
     .nav .logo1{
         max-width: 60px;
         width: 100%;
-     
     }
 }
 
 
-/* 下拉選單 */
+/*  ............ 下拉選單 ............ */
 
-.nav li.select{
+/* .nav li.select{
     position: relative;
 }
 .nav li.select:hover ul.shop-list{
@@ -117,13 +117,126 @@ ul.shop-list{
 }
 .nav .select ul.shop-list a:hover{
     color:#8D9A7B;
+} */
+/*  ............ 漢堡選單 ............ */
+.nav{
+    position: relative;
+}
+#menu-control{
+    position: absolute;
+    left: -50px;
+    z-index: -2;
+    /* 讓他移出畫面 */
+}
+.nav .hamburger{
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 55px;
+    right: 90px;
+    box-shadow: .5px 2px 5px #977e3a;
+    display:none;
+}
+.hamburger span{
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    display: block;
+    overflow: hidden;
+    /* 以防萬一他露出來*/
+}
+.hamburger::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 35px;
+    background-color: rgb(0, 0, 0);
+    /* 讓他置中 */
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 3px;
+    box-shadow: 0 10px 0  rgb(0, 0, 0),
+                0 -10px 0  rgb(0, 0, 0);
+}
+.inside-menu{
+    display: none;
 }
 
+@media(max-width:991px){
+    .nav .hamburger{
+        display: inline-block;
+    }
+    ul.inside-menu{
+        display: block;
+        width: 40%;
+        position: absolute;
+        right: -500px;
+        top: 144px;
+        background-color: #E2CFA9;
+        opacity: .8;
+        transition: .8s;
+    }
+    ul.inside-menu li{
+        height: 50px;
+    }
+    ul.inside-menu li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 50px;
+        border-bottom: 1px solid #fce8c3;
+    }
+    #menu-control:checked ~ .inside-menu{
+        right: 0;
+    }
+    #menu-control:checked ~ .hamburger{
+        box-shadow:  0px 0px 2px #977e3a;
+    }
+    .nav ul.menu{
+        display: none;
+    }
+    
+    .nav .inside-menu .btn{
+        position: relative;   
+    }
+    .nav .btn1 i{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        opacity: 0;
+    }
+    .nav .btn2 i{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        opacity: 0;
+    }
+    .nav .btn3 i{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        opacity: 0;
+    }
+    .nav .btn:hover i, .nav .btn.active i{
+        opacity: 1;
+    } 
+}
+@media screen and (max-width:575px ){
+    ul.inside-menu{
+        top: 120px;
+    }
+
+
+  
+}
 
 /* ...... 共用 footer block ....... */
 
 .footer{
-    background-color: #E2CFA9;
+    background-color:#E2CFA9;
     display: flex;
     padding: 50px 70px;
     justify-content: space-around;
@@ -143,9 +256,11 @@ ul.shop-list{
 .box-right .box-right-block a{
     text-decoration: none;
     margin-left: 10px;
+    /* display: block; */
 }
 .box-right .box-right-block img{
     width: 30px;
+    /* display: block; */
 }
 .box-right-block a .line{
     transform: translateY(2px);

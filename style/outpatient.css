@@ -282,6 +282,7 @@ h2{
     background-color:#ECDFC6;
     text-align: center;
     box-sizing: border-box;
+    margin-bottom: 50px;
     /* flex-grow: 1; */
     
 }
@@ -334,4 +335,7 @@ h2{
     color: #63835D;
     outline: 2px solid #63835D;
     
+}
+.section4 li .li-first{
+    min-height: 890px;
 }
