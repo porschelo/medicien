@@ -177,6 +177,7 @@ ul.shop-list{
         background-color: #E2CFA9;
         opacity: .8;
         transition: .8s;
+        z-index: 33;
     }
     ul.inside-menu li{
         height: 50px;
@@ -197,6 +198,7 @@ ul.shop-list{
     }
     .nav ul.menu{
         display: none;
+
     }
     
     .nav .inside-menu .btn{
