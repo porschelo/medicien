@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/style.css">
+   
 </head>
 <body>
     <div class="wrapper">
@@ -159,39 +160,43 @@
         <div class="section3">
             <h1>{ 熱門商品火熱熱 }</h1>
             <h2>看看大家都買什麼</h2>
-            <ul class="product-list">
-                <a href="./03-1product page.html">
-                    <li>
-                        <img src="./img/00index/product01@2x.png" alt="">
-                         <p>艸果水 東洋盒裝</p>
-                         <span>NT$500</span>
-                     </li>
-                </a>
-                <a href="./03-1product page.html">
-                    <li><img src="./img/00index/product02@2x.png" alt="">
-                        <p>紅棗脆片 180g/罐</p>
-                        <span>NT$200</span>
-                    </li>
-                </a>
-                <a href="./03-1product page.html">    
-                    <li><img src="./img/00index/product03@2x.png" alt="">
-                        <p>奇異果果乾 110g/袋</p>
-                        <span>NT$150</span>
-                    </li>
-                </a>   
-                <a href="./03-1product page.html">   
-                    <li><img src="./img/00index/product04@2x.png" alt="">
-                        <p>蔥蒜腰果 150g/袋</p>
-                        <span>NT$200</span>
-                    </li>
-                </a> 
-                <a href="./03-1product page.html">      
-                    <li><img src="./img/00index/product01@2x.png" alt="">
-                        <p>艸果水 東洋盒裝</p>
-                        <span>NT$500</span>
-                    </li>
-                </a> 
-             </ul>
+            <div class="swiper-container">
+                <ul class="product-list swiper-wrapper">
+                    <a href="./03-1product page.html" class="swiper-slide">
+                        <li>
+                            <img src="./img/00index/product01@2x.png" alt="">
+                            <p>艸果水 東洋盒裝</p>
+                            <span>NT$500</span>
+                        </li>
+                    </a>
+                    <a href="./03-1product page.html" class="swiper-slide">
+                        <li><img src="./img/00index/product02@2x.png" alt="">
+                            <p>紅棗脆片 180g/罐</p>
+                            <span>NT$200</span>
+                        </li>
+                    </a>
+                    <a href="./03-1product page.html" class="swiper-slide">    
+                        <li><img src="./img/00index/product03@2x.png" alt="">
+                            <p>奇異果果乾 110g/袋</p>
+                            <span>NT$150</span>
+                        </li>
+                    </a>   
+                    <a href="./03-1product page.html" class="swiper-slide">   
+                        <li><img src="./img/00index/product04@2x.png" alt="">
+                            <p>蔥蒜腰果 150g/袋</p>
+                            <span>NT$200</span>
+                        </li>
+                    </a> 
+                    <a href="./03-1product page.html" class="swiper-slide">      
+                        <li><img src="./img/00index/product01@2x.png" alt="">
+                            <p>艸果水 東洋盒裝</p>
+                            <span>NT$500</span>
+                        </li>
+                    </a> 
+                </ul>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
             <a class="btn" href="./03shop.html">more</a>
         </div>   
 
@@ -301,6 +306,9 @@
     </div>
 				
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <script src="./js/index.js"></script>
