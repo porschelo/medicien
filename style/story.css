@@ -37,7 +37,9 @@ h2{
     display: block;
     width: 100%;
 }
-
+.section1 .slick-block{
+    cursor: pointer;
+}
 /* ------section2 block----- */
 .section2{
     background-image: url(../img/01story/pic02.jpg);
@@ -63,6 +65,13 @@ h2{
 .section2 .cover h1{
    margin-bottom: 10px;
 }
+@media (max-width:575px ){
+    .section2{
+        background-attachment: cover;
+        background-size: cover;
+    }
+}
+
 /* ------section3 block----- */
 .section3{
     background-image:linear-gradient(180deg,rgba(216, 219 ,208) 0%, rgba(107, 127 ,90) 100%);
