@@ -248,13 +248,9 @@ h2{
         margin: 0;
     }
     .section4{
-      
-        background-repeat: no-repeat;
-        background-position: center center;
         background-attachment: cover;
-       
-       
     }
+   
 }
 
 @media (min-width:576px) and (max-width: 1160px){
