@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>泰昌堂-門診介紹</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- slick  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <link rel="stylesheet" href="./style/web-commed.css">
     <link rel="stylesheet" href="./style/outpatient.css">
 </head>
@@ -13,9 +16,13 @@
     <div class="wrapper">
         <div class="section1">
              <!-- ---nav bar  star--- -->
-             <div class="nav">
+            <div class="nav">
+                <input type="checkbox" id="menu-control">
                 <a href="01index.html">
                      <img class="logo1" src="./img/00index/logo01@2x.png" alt="">
+                </a>
+                <a href="#">
+                    <img class="btn7" src="./img/00index/icon04@2x.png" alt="">
                 </a>
                 <ul class="menu">
                     <li class="btn btn1">
@@ -24,7 +31,7 @@
                             <span>品牌故事</span>
                         </a>
                     </li>
-                    <li class="btn btn2 ">
+                    <li class="btn btn2">
                         <a href="03shop.html">
                             <i></i>
                             <span>養生提案</span>
@@ -35,16 +42,63 @@
                             <i></i>
                             <span>我藥你愛</span>
                         </a>
-                        <ul class="shop-list">
+                        <!-- <ul class="shop-list">
                             <li class="list-inside">
                                 <a href="./04storeroom.html">藥罐小藏室</a>
                             </li>
                             <li class="list-inside"> 
                                 <a href="">藥罐小藏室</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li class="btn btn1 active">
+                    <li class="btn btn1 ">
+                        <a href="05outpatient.html">
+                            <i></i>
+                            <span>門診介紹</span>
+                        </a>
+                    </li>
+                    <li class="btn btn2">
+                        <a href="story.html">
+                            <i></i>
+                            <span>預約門診</span>
+                        </a>
+                    </li>
+                    <li class="btn btn3">
+                        <a href="story.html">
+                            <i></i>
+                            <span>登入註冊</span>
+                        </a>
+                    </li>  
+                </ul>
+                <!-- ======  hamburger menu ======= -->
+                <ul class="inside-menu">
+                    <li class="btn btn1">
+                        <a href="02story.html">
+                            <i></i>
+                            <span>品牌故事</span>
+                        </a>
+                    </li>
+                    <li class="btn btn2">
+                        <a href="03shop.html">
+                            <i></i>
+                            <span>養生提案</span>
+                        </a>
+                    </li>
+                    <li class="btn btn3 select">
+                        <a href="04storeroom.html">
+                            <i></i>
+                            <span>我藥你愛</span>
+                        </a>
+                        <!-- <ul class="shop-list">
+                            <li class="list-inside">
+                                <a href="./04storeroom.html">藥罐小藏室</a>
+                            </li>
+                            <li class="list-inside"> 
+                                <a href="">藥罐小藏室</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li class="btn btn1 ">
                         <a href="05outpatient.html">
                             <i></i>
                             <span>門診介紹</span>
@@ -62,18 +116,22 @@
                             <span>登入註冊</span>
                         </a>
                     </li>
-                    <a href="#">
-                        <img class="btn7" src="./img/00index/icon04@2x.png" alt="">
-                    </a>
-                   
                 </ul>
+                <label class="hamburger" for="menu-control"><span>選單</span></label>
+               
             </div>
             <!-- ---nav bar  end--- -->
-            <div class="container"> 
-                <div class="img-block">
-                    <img src="./img/04outpatient/pic01.jpg" alt="" />
-                </div> 
-            </div>
+            <div class="container">
+                <!-- ---slick-block--- -->
+             <div class="slick-block">
+                <!-- <div class="img-block"> -->
+                    <img class="main-pic" src="./img/04outpatient/pic01.jpg" alt="">
+                    <img class="main-pic" src="./img/04outpatient/poc06.jpg" alt="">
+                    <img class="main-pic" src="./img/04outpatient/poc07.jpg" alt="">
+                <!-- </div>  -->
+             </div>
+         </div>
+          
         </div>
 
         <!-- section 2 -->
@@ -249,5 +307,11 @@
         
         </div>
     </div>
+
+     <!-- jquery -->			
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Slick JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+     <script src="./js/index.js"></script>
 </body>
 </html>
