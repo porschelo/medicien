@@ -251,7 +251,9 @@ h2{
         /* background-attachment: cover; */
         background-size: cover;
     }
-   
+    .section4 h2{
+        padding: 0 5px;
+    }
 }
 
 @media (min-width:576px) and (max-width: 1160px){
