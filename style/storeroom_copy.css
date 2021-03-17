@@ -25,14 +25,17 @@ h3{
     font-size: 18px;
 }
 /* ------section1 block----- */
-
+.section1{
+    /* overflow: hidden; */
+}
 /* ------section2 block----- */
 .section2{
     background-color: #8D9A7B;
     display: flex;
     padding: 100px 0;
     margin: 0 auto;
-    
+    /* overflow: hidden; */
+    /* overflow-x: scroll; */
 }
 .section2 .s-left{
     margin: 30px;

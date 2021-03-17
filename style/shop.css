@@ -1,4 +1,4 @@
-@import url('../style/reset.css;');
+@import url('../style/reset.css');
 
 *{
     outline: 1px solid pink;
@@ -23,7 +23,9 @@ h2{
     font-size: 18px;
 }
 /* ------section1 block----- */
-
+.section1{
+    overflow: hidden;
+}
 /* ------section2 block----- */
 .section2{
   outline: 1px solid red;
@@ -66,7 +68,72 @@ h2{
     text-align: center;
     padding-top: 35px;
 }
+@media (max-width:599px){
+    .section2{
+        width: 100%;
+        min-width: 100%;
+        flex-direction: column;
+    }
+    .section2 .woodboard{
+        height: 100%;
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: scroll;
+        flex-wrap:nowrap;
+        
+    }
+    .section2 .productboard .out {
+        width: 100%;
+    }
+    .productboard .out a {
+        margin: 0 2px;
+    }
+}
+@media  (min-width:600px) and (max-width:829px){
+    .section2{
+        width: 100%;
+        min-width: 100%;
+        flex-direction: column;
+    }
+    .section2 .woodboard{
+        height: 100%;
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+    .section2 .productboard .out {
+        width: 100%;
+    }
+    .productboard .out a {
+        margin: 0 2px;
+    }
+}
+@media (min-width:830px) and (max-width:1105px){
+    .section2 .productboard .out {
+        width: 100%;
+    }
+    .section2{
+        width: 100%;
+        min-width: 100%;
+        flex-direction: column;
+    }
+    .section2 .woodboard{
+        height: 100%;
+        width: 100%;
+       justify-content: space-around;
+    }
+    .productboard .out a {
+        margin: 0 2px;
+    }
+}
 
+
+@media (min-width:1106px) and (min-width:1190px){
+    .section2{
+        width: 100%;
+        min-width: 1080px;
+    }
+}
 /* ------product board block----- */
 
 .productboard{
@@ -129,6 +196,8 @@ h2{
     margin-top: 20px;
 }
 
+
+
 /* ------section3 block----- */
 
 .section3{
@@ -149,5 +218,19 @@ h2{
 /* footer-block */
 .footer{
     width: 100%;
-    min-width: 1080px;
+}
+
+/* @media (min-width:768px) and (max-width:1189px */
+@media (max-width:1189px){
+    .footer{
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media (min-width:1190px){
+    .footer{
+        width: 100%;
+        min-width: 1080px;
+    }
 }
