@@ -62,12 +62,10 @@ h3{
 text-align: center;
 }
 .s-center img{
-    width: 500px;
+    max-width: 500px;
     margin-bottom: 20px;
 }
-.s-center .center-bottom{
 
-}
 .s-center .center-bottom img{
     width: 80px;
     height: 80px;
