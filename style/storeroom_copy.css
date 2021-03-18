@@ -12,7 +12,7 @@ body{
 }
 .wrapper{
     width: 100%;
-    min-width: 980px;
+    /* min-width: 980px; */
     margin: 0 auto;
 }
 h1{
@@ -26,7 +26,7 @@ h3{
 }
 /* ------section1 block----- */
 .section1{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 /* ------section2 block----- */
 .section2{
@@ -70,6 +70,7 @@ h3{
     margin: 0 auto;
     background-color: #E2CFA9;
     border: 2px solid #8D9A7B;
+    overflow-x: scroll;
     /* border:1px solid red; */
 }
 .section2 .s-right .box{
