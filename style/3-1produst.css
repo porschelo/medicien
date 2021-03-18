@@ -336,6 +336,9 @@ text-align: center;
         max-width: 340px;
         margin: 0 auto;
     }
+    .s-center img {
+        max-width: 500px;
+    }
     
 }
 @media (min-width:715px) and (max-width:849px){

@@ -88,6 +88,12 @@ h2{
     .productboard .out a {
         margin: 0 2px;
     }
+    .productboard .top {
+        justify-content: center;
+    }
+    .productboard .top .select {
+        margin-right: 0px;
+    }
 }
 @media  (min-width:600px) and (max-width:829px){
     .section2{
