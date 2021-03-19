@@ -7,6 +7,9 @@
     <title>泰昌堂-shop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <!-- hamburger  -->
+    <link rel="stylesheet" href="./hamburgers-master/dist/hamburgers.min.css">
+
     <link rel="stylesheet" href="./style/web-commed.css">
     <link rel="stylesheet" href="./style/shop.css">
 </head>
@@ -15,13 +18,21 @@
         <div class="section1">
              <!-- ---nav bar  star--- -->
              <div class="nav">
-                <input type="checkbox" id="menu-control">
+                
                 <a href="01index.html">
                      <img class="logo1" src="./img/00index/logo01@2x.png" alt="">
                 </a>
+                
                 <a href="#">
                     <img class="btn7" src="./img/00index/icon04@2x.png" alt="">
                 </a>
+                <!-- ====== ==== hamburger ==== ====== -->
+                <button class="hamburger hamburger--collapse is-active" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                
                 <ul class="menu">
                     <li class="btn btn1">
                         <a href="02story.html">
@@ -40,14 +51,6 @@
                             <i></i>
                             <span>我藥你愛</span>
                         </a>
-                        <!-- <ul class="shop-list">
-                            <li class="list-inside">
-                                <a href="./04storeroom.html">藥罐小藏室</a>
-                            </li>
-                            <li class="list-inside"> 
-                                <a href="">藥罐小藏室</a>
-                            </li>
-                        </ul> -->
                     </li>
                     <li class="btn btn1 ">
                         <a href="05outpatient.html">
@@ -69,7 +72,7 @@
                     </li>  
                 </ul>
                 <!-- ======  hamburger menu ======= -->
-                <ul class="inside-menu">
+                <ul class="inside-menu" style="display: none;">
                     <li class="btn btn1">
                         <a href="02story.html">
                             <i></i>
@@ -87,14 +90,6 @@
                             <i></i>
                             <span>我藥你愛</span>
                         </a>
-                        <!-- <ul class="shop-list">
-                            <li class="list-inside">
-                                <a href="./04storeroom.html">藥罐小藏室</a>
-                            </li>
-                            <li class="list-inside"> 
-                                <a href="">藥罐小藏室</a>
-                            </li>
-                        </ul> -->
                     </li>
                     <li class="btn btn1 ">
                         <a href="05outpatient.html">
@@ -114,10 +109,8 @@
                             <span>登入註冊</span>
                         </a>
                     </li>
-                </ul>
-                <label class="hamburger" for="menu-control"><span>選單</span></label>
-               
-            </div>
+                </ul> 
+                
             </div>
             <!-- ---nav bar  end--- -->
         </div>
@@ -311,5 +304,8 @@
         <!-- --footer block  end-- -->
 
     </div>
+   
+    <script src="./js/shop.js"></script>
+
 </body>
 </html>

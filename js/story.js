@@ -1,16 +1,24 @@
 $(document).ready(function(){
-	
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+    $(".slick-block").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplaySpeed: 2000,  
+      dots: true,
+      autoplay: true,
+      arrows: false,
+      autoplaySpeed: 8000, 
+    });
+ });
 
-		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current');
+//  $('.product-list').slick({
+//   slidesToShow: '4',
+//   slidesToScroll: 1,
+//   autoplay: false,
+//   // autoplaySpeed: 5000,
+// });
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-	})
 
-});
+
 
 
 //  =========== hamburger =============

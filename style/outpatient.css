@@ -35,7 +35,16 @@ h2{
 .section1 .slick-block{
     cursor: pointer;
 }
-
+.slick-block .slick-dots {
+    position: relative;
+    bottom: 0px;
+    display: block;
+    background-color: #E2CFA9;
+    padding-bottom: 15px;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
 /* ------section2 block----- */
 .section2{
     background-image: url(../img/04outpatient/poc05.jpg);
@@ -57,7 +66,6 @@ h2{
 .section2 img{
     width: 100%;
     display: block;
-    
 }
 
 .section2 .cover h1{

@@ -44,7 +44,7 @@ h2{
 /* ...... section2 ....... */
 .section2{
     background-color: #E2CFA9;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .section2 .slick-dots{
     background-color: #E2CFA9;
