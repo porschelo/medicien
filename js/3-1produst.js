@@ -1,3 +1,5 @@
+//tab
+
 $(document).ready(function(){
 	
 	$('ul.tabs li').click(function(){

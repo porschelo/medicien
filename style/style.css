@@ -320,6 +320,7 @@ h2{
      .mid .mid-right{
         padding: 10px;
      }
+     
 
 }
 @media  (min-width:576px) and (max-width: 1160px){
@@ -384,6 +385,7 @@ h2{
         /* min-width: 265px; */
         padding: 10px;
     }
+    
 
 }    
 @media  (min-width:576px) and (max-width: 1160px){

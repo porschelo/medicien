@@ -30,6 +30,16 @@
         el: '.swiper-pagination',
         clickable: true,
       },
+      breakpoints:{
+        100:{
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        575:{
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      }
     });
 
 
