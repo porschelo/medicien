@@ -32,3 +32,12 @@ $(document).ready(function(){
         inside_menu.style.display = "none";
       }
   });
+
+  //換圖
+
+  $(document).ready(function () {
+    $('.carousel__inner__link').click(function () { 
+        $('.carousel__item__pic--active').attr('src', $(this).attr('href'));
+        return false;
+    });
+});

@@ -42,6 +42,9 @@ h3{
 .section2 .woodboard a:hover{
     color: #995316;
 }
+.section2 .s-center a{
+    text-decoration: none;
+}
 .section2 a .wood{
     width: 45px;
     height: 150px;
