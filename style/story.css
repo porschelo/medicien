@@ -77,7 +77,7 @@ h2{
 
 @media (max-width:575px ){
     .section2{
-        background-attachment: cover;
+        background-attachment: initial;
         background-size: cover;
     }
 }
