@@ -76,7 +76,18 @@ text-align: center;
     box-sizing: border-box;
     border: 1px solid #6B7F5A;
 }
-
+.carousel__item__pic--active{
+    max-width: 500px;
+    outline: .5px solid black;
+}
+.carousel__inner__pic {
+    width: 80px;
+    height: 80px;
+    
+}
+.a{
+    outline: .5px solid black;
+}
 /* ---- s-right ---- */
 
 .s-right{
