@@ -248,7 +248,7 @@ h2{
         margin: 0;
     }
     .section4{
-        background-attachment: scroll;
+        background-attachment: initial;
         background-size: cover;
     }
     .section4 h2{
