@@ -38,7 +38,7 @@ $(document).ready(function(){
   //換圖
 
   $(document).ready(function () {
-    $('.carousel__inner__link').click(function () { 
+    $('.carousel__inner__link').click(function () {
         $('.carousel__item__pic--active').attr('src', $(this).attr('href'));
         return false;
     });
